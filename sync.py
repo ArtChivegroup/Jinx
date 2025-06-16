@@ -17,10 +17,11 @@ def generate_key(epoch_time=None):
     return key
 
 def write_key(filepath):
+    # Pastikan direktori tujuan ada
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
     key = generate_key()
     with open(filepath, "w") as f:
         f.write(key + "\n")
 
 if __name__ == "__main__":
-    # File path relative to repo root
     write_key("Jinx/files/Sync")
