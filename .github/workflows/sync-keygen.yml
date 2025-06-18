@@ -2,7 +2,7 @@ name: Auto Generate Sync Key
 
 on:
   schedule:
-    - cron: '0 */3 * * *'   # Setiap 3 jam sekali (UTC)
+    - cron: '0 * * * *'   # Setiap 1 jam sekali (UTC)
   workflow_dispatch:
 
 permissions:
