@@ -24,4 +24,5 @@ def write_key(filepath):
         f.write(key + "\n")
 
 if __name__ == "__main__":
-    write_key("Jinx/files/Sync")
+    # Menulis ke path absolut dari root repo
+    write_key("Jinx/files/Jinx/files/Sync")
